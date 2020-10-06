@@ -81,6 +81,7 @@ function ConvertTo-KPPSObject
                         'URL'                     = $_keepassItem.Strings.ReadSafe('URL');
                         'Notes'                   = $_keepassItem.Strings.ReadSafe('Notes');
                         'IconId'                  = $_keepassItem.IconId;
+                        'StringFields'            = $_keepassItem.Strings;  
                         'Credential'              = $Credential;
                         'DatabaseProfileName'     = $DatabaseProfileName;
                         'KPEntry'                 = $_keepassItem;
